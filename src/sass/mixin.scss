@@ -1,0 +1,18 @@
+@mixin flex($algin-item, $justify-content) {
+    display: flex;
+    align-items: $algin-item;
+    justify-content: $justify-content;
+}
+// mixin  reponsive mobile
+@mixin tablet {
+    @media screen and (max-width: $mobile-width) {
+        @content;
+    }
+}
+// mixin  reponsive tablet
+
+@mixin mobile {
+    @media screen and (max-width: $tablet-width) {
+        @content;
+    }
+}

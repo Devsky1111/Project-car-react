@@ -1,0 +1,108 @@
+.product-box {
+    display: flex;
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+.product-img {
+    flex: 1;
+    margin-right: 20px;
+    border: 2px solid #d67e7e;
+    overflow: hidden;
+}
+.product-img:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+.product-img img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 1s;
+}
+.product-info {
+    flex: 1;
+    position: relative;
+}
+.product-info__title {
+    line-height: 20px;
+}
+.btn-desc {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}
+.btn-group {
+    position: absolute;
+    bottom: 10px;
+    /* border: 1px solid blue; */
+    width: 100%;
+}
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: coral;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.btn-yellow {
+    background-color: rgb(95, 255, 80);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+}
+.btn-yellow::after {
+    content: "»";
+    position: absolute;
+    /* opacity: 0; */
+    right: -20px;
+    transition: 0.5s;
+}
+.btn-yellow:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+.btn-yellow:hover::after {
+    opacity: 1;
+    right: 10px;
+}
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+table tr th,
+table tr td {
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+}
+table tr th {
+    background-color: #d67e7e;
+}
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+
+button:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+    transform: translateY(3px);
+}
